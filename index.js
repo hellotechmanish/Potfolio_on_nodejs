@@ -4,7 +4,7 @@ const path = require("path");
 const mailer = require("./controler/mailer");
 require('dotenv').config();
 
-const port = 3000;
+const port = process.env.port;
 
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
