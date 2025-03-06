@@ -24,7 +24,7 @@ app.use("/mail", mailer);
 
 // Render the home page
 app.get("/", (req, res) => {
-  res.render("Complete_Portfolio_Website/index"); // Assuming the file is named "home.ejs"
+  res.render("frontend/index"); // Assuming the file is named "home.ejs"
 });
 // Start the server
 app.listen(port, () => {
