@@ -4,7 +4,9 @@ const path = require("path");
 const mailer = require("./controler/mailer");
 require('dotenv').config();
 
-const port = process.env.port;
+// const port = process.env.port;
+
+const PORT = process.env.PORT || 3000;
 
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
@@ -27,6 +29,11 @@ app.get("/", (req, res) => {
   res.render("frontend/index"); // Assuming the file is named "home.ejs"
 });
 // Start the server
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+// app.listen(port, () => {
+//   console.log(`Server running at http://localhost:${port}`);
+// });
+
+// Use 0.0.0.0 instead of localhost
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running at http://localhost:${PORT}`);
 });
