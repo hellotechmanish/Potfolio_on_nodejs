@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const notifier = require('node-notifier');
+
 
 // Setup transport using Gmail SMTP details
 const transporter = nodemailer.createTransport({
@@ -9,8 +11,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true,
     auth: {
-        user: process.env.EMAIL_USER,  // Your Gmail email address
-        pass: process.env.EMAIL_PASS,  // Your Gmail App Password (generated from 2-Step Verification)
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
     }
 });
 
@@ -57,6 +59,12 @@ router.post('/', async (req, res) => {
         // ✅ User Confirmation Email Send Karein
         const userInfo = await transporter.sendMail(userMailOptions);
         console.log("📩 User Email Sent, Message ID:", userInfo.messageId);
+
+        notifier.notify({
+            title: 'success',
+            message: 'Emails sent successfully.',
+            sound: true
+        });
 
         res.status(200).json({
             status: 'success',

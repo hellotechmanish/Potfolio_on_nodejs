@@ -6,7 +6,7 @@ require('dotenv').config();
 
 // const port = process.env.port;
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 // Set up EJS as the view engine
 app.set("view engine", "ejs");

@@ -245,7 +245,7 @@
             </div>
             <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                 <div class="card-img">
-                    <img src="Image/work6.jpg" alt="">
+                    <img src="Image/work4.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -300,13 +300,13 @@
                     <form action="/mail" method="post">
                         <h3>Send Message</h3>
                         <div class="input-box">
-                            <input type="text" name="name" value="" placeholder="Name">
+                            <input type="text" name="name" required value="" placeholder="Name">
                         </div>
                         <div class="input-box">
-                            <input type="text" name="email" value="" placeholder="Email">
+                            <input type="email" name="email" required value="" placeholder="Email">
                         </div>
                         <div class="input-box">
-                            <textarea name="message" rows="8" cols="80" placeholder="Message"></textarea>
+                            <textarea name="message" required rows="8" cols="80" placeholder="Message"></textarea>
                         </div>
                         <div class="input-box">
                             <input type="submit" class="send-btn" name="" value="Send">
@@ -322,32 +322,7 @@
         <p>Copyright @2024 <a href="#">Manish-kumar</a>. All Rights Reserved.</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({ offset: 0 });
-    </script>
-    <script>
-        const menuBtn = document.querySelector(".menu-btn");
-        const navigation = document.querySelector(".navigation");
-        const navigationItems = document.querySelectorAll(".navigation a");
 
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
-
-        window.addEventListener("scroll", function () {
-            const header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
-
-        navigationItems.forEach((navigationItem) => {
-            navigationItem.addEventListener("click", () => {
-                menuBtn.classList.remove("active");
-                navigation.classList.remove("active");
-            });
-        });
-    </script>
 </body>
 
 </html>
