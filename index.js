@@ -4,14 +4,11 @@ const path = require("path");
 const mailer = require("./controler/mailer");
 require('dotenv').config();
 
-// const port = process.env.port;
-
 const PORT = process.env.PORT || 10000;
 
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
-
 
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
@@ -28,6 +25,7 @@ app.use("/mail", mailer);
 app.get("/", (req, res) => {
   res.render("frontend/index"); // Assuming the file is named "home.ejs"
 });
+
 // Start the server
 // app.listen(port, () => {
 //   console.log(`Server running at http://localhost:${port}`);
