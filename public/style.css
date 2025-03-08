@@ -575,6 +575,7 @@ section {
 @media screen and (max-width: 1033px) {
     .main {
         background-attachment: scroll;
+        height: 60vh;
         /* Fixed hata kar scroll kar de */
     }
 
@@ -690,4 +691,12 @@ section {
     pointer-events: none;
     opacity: 0;
     transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 833px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        background-position-x: -789px;
+    }
 }
