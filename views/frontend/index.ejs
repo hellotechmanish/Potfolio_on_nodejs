@@ -13,11 +13,19 @@
 
 <body>
     <!-- Loader ko body ke start me rakho -->
-    <div class="container" style="width:100px; height:100px; background:red;">
-        <div class="loader"></div>
-        <div class="loader"></div>
-        <div class="loader"></div>
+    <!-- From Uiverse.io by abrahamcalsin -->
+    <div class="dot-spinner">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
     </div>
+
+
     <header>
         <div class="left_nav"><a href="/" class="brand" data-aos="zoom-in" data-aos-duration="1000">Manish</a></div>
         <div class="right_nav">
@@ -364,12 +372,15 @@
         });
     </script>
     <script>
-        window.addEventListener("load", function () {
-            document.querySelector(".container").style.display = "none";
-            console.log("JavaScript is working");
-
-        });
+        // Page load hone ke baad 2 second ke andar loader hide hoga
+        window.onload = function () {
+            setTimeout(() => {
+                document.querySelector(".dot-spinner").style.display = "none";
+            }, 2000); // 2000ms = 2 seconds
+        };
     </script>
+
+
 
 </body>
 
