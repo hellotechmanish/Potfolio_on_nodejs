@@ -30,7 +30,7 @@ header {
 
 
     z-index: 1;
-    position: fixed;
+    position: relative;
     background-color: rgba(35, 34, 34, 1);
     top: 0;
     left: 0;
@@ -45,9 +45,11 @@ header {
 
 }
 
+
 header.sticky {
     background-color: #3a6cf4;
-    padding: 10px 200px;
+    /* padding: 10px 200px; */
+    padding: 10px 50px;
 }
 
 header .brand {
@@ -76,9 +78,9 @@ header .navigation a:hover {
     color: #3a6cf4;
 }
 
-header.sticky .navigation a:hover {
+/* header.sticky .navigation a:hover {
     color: black;
-}
+} */
 
 section {
     padding: 100px 200px;
@@ -575,7 +577,8 @@ section {
 @media screen and (max-width: 1033px) {
     .main {
         background-attachment: scroll;
-        height: 60vh;
+        height: 50vh;
+        background-position: center;
         /* Fixed hata kar scroll kar de */
     }
 
@@ -695,8 +698,13 @@ section {
 
 @media screen and (max-width: 833px) {
     .main {
-        display: flex;
+        /* display: flex;
         flex-direction: column-reverse;
-        background-position-x: -789px;
+        background-position-x: -300px; */
+
+        display: flex;
+        flex-direction: row;
+        background-position-x: -450px;
+        background-position-y: 0px;
     }
 }
