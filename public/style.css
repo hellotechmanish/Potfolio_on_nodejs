@@ -570,14 +570,14 @@ section {
 /* loader */
 /* From Uiverse.io by abrahamcalsin */
 .dot-spinner {
-    --uib-size: 2.8rem;
-    --uib-speed: .9s;
-    --uib-color: #2dc3c4;
-    ;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    --uib-size: 5rem;
+    --uib-speed: 0.9s;
+    --uib-color: #ffffff;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    /* display: flex
+; */
     height: var(--uib-size);
     width: var(--uib-size);
 }
