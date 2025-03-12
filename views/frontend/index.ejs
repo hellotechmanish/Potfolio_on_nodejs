@@ -12,6 +12,12 @@
 </head>
 
 <body>
+    <!-- Loader ko body ke start me rakho -->
+    <div class="container" style="width:100px; height:100px; background:red;">
+        <div class="loader"></div>
+        <div class="loader"></div>
+        <div class="loader"></div>
+    </div>
     <header>
         <div class="left_nav"><a href="/" class="brand" data-aos="zoom-in" data-aos-duration="1000">Manish</a></div>
         <div class="right_nav">
@@ -323,6 +329,8 @@
         </div>
     </section>
 
+
+
     <footer class="footer">
         <span class="footer-title">Manish-kumar</span>
         <p>Copyright @2024 <a href="">Manish-kumar</a>. All Rights Reserved.</p>
@@ -355,6 +363,14 @@
             });
         });
     </script>
+    <script>
+        window.addEventListener("load", function () {
+            document.querySelector(".container").style.display = "none";
+            console.log("JavaScript is working");
+
+        });
+    </script>
+
 </body>
 
 </html>
