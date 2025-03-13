@@ -8,27 +8,11 @@
 }
 
 body {
-    /* max-width: 1500px; */
     margin: 0 auto;
     width: 100%;
-    /* height: auto;
-    overflow-x: hidden; */
 }
 
 header {
-    /* z-index: 1;
-    position: fixed;
-    background-color: rgba(35, 34, 34, 1);
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.2s ease; */
-
-
     z-index: 1;
     position: relative;
     background-color: rgba(35, 34, 34, 1);
@@ -41,14 +25,10 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: 0.2s ease;
-
-
 }
-
 
 header.sticky {
     background-color: #3a6cf4;
-    /* padding: 10px 200px; */
     padding: 10px 50px;
 }
 
@@ -78,16 +58,15 @@ header .navigation a:hover {
     color: #3a6cf4;
 }
 
-/* header.sticky .navigation a:hover {
+header.sticky .navigation a:hover {
     color: black;
-} */
+}
 
 section {
     padding: 100px 200px;
 }
 
 .main {
-    /* position: relative; */
     display: flex;
     width: 100%;
     height: 100vh;
@@ -568,7 +547,6 @@ section {
 }
 
 /* loader */
-/* From Uiverse.io by abrahamcalsin */
 .dot-spinner {
     --uib-size: 5rem;
     --uib-speed: 0.9s;
@@ -576,8 +554,6 @@ section {
     position: absolute;
     top: 46%;
     left: 46%;
-    /* display: flex
-; */
     height: var(--uib-size);
     width: var(--uib-size);
 }
@@ -688,7 +664,6 @@ section {
         background-attachment: scroll;
         height: 50vh;
         background-position: center;
-        /* Fixed hata kar scroll kar de */
     }
 
     header.sticky {
@@ -807,10 +782,6 @@ section {
 
 @media screen and (max-width: 833px) {
     .main {
-        /* display: flex;
-        flex-direction: column-reverse;
-        background-position-x: -300px; */
-
         display: flex;
         flex-direction: row;
         background-position-x: -450px;
