@@ -231,8 +231,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 82%;
-    height: 106%;
+    width: 75%;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -784,7 +784,7 @@ section {
     .main {
         display: flex;
         flex-direction: row;
-        background-position-x: -450px;
+        background-position-x: 0px;
         background-position-y: 0px;
     }
 }
