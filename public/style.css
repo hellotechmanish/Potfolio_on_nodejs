@@ -5,6 +5,8 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 
 body {
@@ -12,9 +14,7 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-body{
-overflow-x: hidden;
-}
+
 
 header {
     z-index: 1;
