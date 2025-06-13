@@ -5,9 +5,12 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 
 body {
+    /* overflow-x: hidden; */
     margin: 0 auto;
     width: 100%;
 }
@@ -39,7 +42,7 @@ header .brand {
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-    left: 20px;
+    /* left: 10px; */
 }
 
 header .navigation {
@@ -76,6 +79,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .main .content {
@@ -175,17 +179,20 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .section-title {
-    position: relative;
+    /* position: relative; */
     color: #3a6cf4;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 60px;
+    overflow-y: hidden;
 }
 
 .section-title::before {
+    overflow-y: hidden;
     content: "";
     position: absolute;
     top: 56px;
@@ -325,6 +332,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .services .content .card {
@@ -381,6 +389,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .work .content .card {
@@ -418,12 +427,14 @@ section {
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .contact .content .row {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .contact .content .row .card {
@@ -556,6 +567,7 @@ section {
     left: 46%;
     height: var(--uib-size);
     width: var(--uib-size);
+    overflow: hidden;
 }
 
 .dot-spinner__dot {

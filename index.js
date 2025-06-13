@@ -6,16 +6,18 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 10000;
 
+// Static folder ko serve karne ke liye
+app.use(express.static(path.join(__dirname, 'public')));
+
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+
+
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
-// Serve static files (if any)
-app.use(express.static(path.join(__dirname, "public")));
 
 
 // Use mailer routes
